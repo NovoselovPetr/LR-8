@@ -14,9 +14,7 @@ function AddBlogToList(blog) {
     NewUser.append(NewAuthor);
     let NewDiv = document.createElement("div");
     NewDiv.id = "message";
-    NewDiv.classList.add("blog");
     let NewH3 = document.createElement("h2");
-    NewH3.classList.add("blogtitle");
     let NewP = document.createElement("p");
     NewP.classList.add("blogbody");
     NewH3.textContent = blog["title"];
