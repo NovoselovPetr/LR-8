@@ -12,11 +12,14 @@ function AddBlogToList(blog) {
     NewAuthor.id="author";
     NewUser.append(NewAvatar);
     NewUser.append(NewAuthor);
+    let NewID = document.createElement("div");
+    NewID.id = "id";
+    NewID.textContent = "id:" + blog["id"];
     let NewDiv = document.createElement("div");
     NewDiv.id = "message";
+    NewUser.append(NewID);
     let NewH3 = document.createElement("h2");
     let NewP = document.createElement("p");
-    NewP.classList.add("blogbody");
     NewH3.textContent = blog["title"];
     NewP.textContent = blog["body"];
     NewDiv.append(NewUser);
